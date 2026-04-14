@@ -1,0 +1,19 @@
+-- COUNT
+SELECT COUNT(*) FROM Students;
+
+-- AVG (example using student_id)
+SELECT AVG(student_id) FROM Students;
+
+-- SUM
+SELECT SUM(student_id) FROM Students;
+
+-- GROUP BY
+SELECT department, COUNT(*) 
+FROM Students
+GROUP BY department;
+
+-- HAVING
+SELECT department, COUNT(*) 
+FROM Students
+GROUP BY department
+HAVING COUNT(*) > 1;
